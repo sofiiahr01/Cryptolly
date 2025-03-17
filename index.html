@@ -3,33 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/button.css" />
     <link rel="stylesheet" href="./styles/card.css" />
     <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/adaptive.css" />
     <title>Cryptolly</title>
   </head>
   <body>
     <header class="header__section">
       <div class="container">
         <div class="header__container">
-          <div class="logo__conteiner">
+          <div class="logo__container">
             <img src="./images/icons/logo.png" alt="logo" />
           </div>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#about">About</a></li>
-              <li class="nav__item"><a href="#service">Service</a></li>
-              <li class="nav__item"><a href="#sale">Token Sale</a></li>
-              <li class="nav__item"><a href="#faq">FAQ’s</a></li>
-              <li class="nav__item"><a href="#team">Team</a></li>
-              <li class="nav__item"><a href="#blog">Blog</a></li>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"
+              ><img src="./images/icons/burger.svg" alt="burger"
+            /></span>
+          </button>
+          <nav class="nav collapse navbar-collapse" id="navbarNav">
+            <ul class="nav__list navbar-nav ms-auto">
+              <li class="nav__item"><a href="#">About</a></li>
+              <li class="nav__item"><a href="#">Service</a></li>
+              <li class="nav__item"><a href="#">Token Sale</a></li>
+              <li class="nav__item"><a href="#">FAQ’s</a></li>
+              <li class="nav__item"><a href="#">Team</a></li>
+              <li class="nav__item"><a href="#">Blog</a></li>
             </ul>
           </nav>
           <button class="nav__button">Get in Touch</button>
         </div>
         <div class="main__container">
-          <h1 class="main__title">Own Your Crypto<br />Adventure</h1>
+          <h1 class="main__title">
+            <span>Own Your Crypto</span><br />Adventure
+          </h1>
           <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -54,9 +71,9 @@
           <div class="cards__container">
             <article class="token__article">
               <img
-                src="./images/icons/Group 1000003752.svg"
-                alt=""
-                class="card__img"
+                src="./images/icons/Group1000003752.svg"
+                alt="img"
+                class="card__img adaptive__img"
               />
               <h4 class="card__title">Enjoy The Profit</h4>
               <p class="description">
@@ -66,9 +83,9 @@
             </article>
             <article class="token__article">
               <img
-                src="./images/icons/Group 1000003752.svg"
-                alt=""
-                class="card__img"
+                src="./images/icons/Group1000003753.svg"
+                alt="img"
+                class="card__img adaptive__img"
               />
               <h4 class="card__title">Customer Support</h4>
               <p class="description">
@@ -78,9 +95,9 @@
             </article>
             <article class="token__article">
               <img
-                src="./images/icons/Group 1000003752.svg"
-                alt=""
-                class="card__img"
+                src="./images/icons/Group1000003754.svg"
+                alt="img"
+                class="card__img adaptive__img"
               />
               <h4 class="card__title">Confirmation</h4>
               <p class="description">
@@ -97,17 +114,17 @@
               <p class="description">Lörem ipsum sosm niliga syntris.</p>
             </div>
             <div class="cards">
-              <div class="card">
+              <div class="descr__card">
                 <p class="description">
                   Lörem ipsum dorade boktig till geosylig postmodern.
                 </p>
               </div>
-              <div class="card">
+              <div class="descr__card">
                 <p class="description">
                   Lörem ipsum dorade boktig till geosylig postmodern.
                 </p>
               </div>
-              <div class="card">
+              <div class="descr__card">
                 <p class="description">
                   Lörem ipsum dorade boktig till geosylig postmodern.
                 </p>
@@ -127,11 +144,7 @@
             </p>
           </article>
           <article class="token__article">
-            <img
-              src="./images/icons/Group 1000003752.svg"
-              alt=""
-              class="card__img"
-            />
+            <img src="./images/icons/img.svg" alt="img" class="card__img" />
             <h4 class="card__title">Bitcoin Escrow Service</h4>
             <p class="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
@@ -139,11 +152,7 @@
             </p>
           </article>
           <article class="token__article">
-            <img
-              src="./images/icons/Group 1000003752.svg"
-              alt=""
-              class="card__img"
-            />
+            <img src="./images/icons/img1.svg" alt="img1" class="card__img" />
             <h4 class="card__title">Safe And Secure</h4>
             <p class="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
@@ -151,11 +160,7 @@
             </p>
           </article>
           <article class="token__article">
-            <img
-              src="./images/icons/Group 1000003752.svg"
-              alt=""
-              class="card__img"
-            />
+            <img src="./images/icons/img3.svg" alt="img3" class="card__img" />
             <h4 class="card__title">Integrated App</h4>
             <p class="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
@@ -163,11 +168,7 @@
             </p>
           </article>
           <article class="token__article">
-            <img
-              src="./images/icons/Group 1000003752.svg"
-              alt=""
-              class="card__img"
-            />
+            <img src="./images/icons/img1.svg" alt="img1" class="card__img" />
             <h4 class="card__title">Safe And Secure</h4>
             <p class="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
@@ -175,11 +176,7 @@
             </p>
           </article>
           <article class="token__article">
-            <img
-              src="./images/icons/Group 1000003752.svg"
-              alt=""
-              class="card__img"
-            />
+            <img src="./images/icons/img3.svg" alt="img3" class="card__img" />
             <h4 class="card__title">Safe And Secure</h4>
             <p class="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
@@ -201,7 +198,7 @@
             <button class="main__button">Get Started</button>
           </div>
           <div class="description__container">
-            <div class="card">
+            <div class="descr__card">
               <h4 class="card__title">Lörem ipsum treras dekalig.</h4>
               <p class="description">
                 Lörem ipsum fulparkerare krollipsum diska didebelt respektive
@@ -486,5 +483,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

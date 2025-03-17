@@ -27,16 +27,13 @@ a {
 
 body {
   background-color: var(--bg-color);
-}
-
-/*section*/
-
-.header__section {
   background-image: url(../images/bg-gradient-top.png),
     url(../images/bg-gradient-bottom.png), url(../images/bg-gradient-center.png);
   background-size: 354px, 538px, 1439px;
   background-repeat: no-repeat;
 }
+
+/*section*/
 
 .team__section {
   background-image: url(../images/section-bg.png);

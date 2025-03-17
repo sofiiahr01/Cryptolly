@@ -1,0 +1,74 @@
+@media (max-width: 431px) {
+  span {
+    color: #4de1ff;
+  }
+
+  .container {
+    max-width: 346px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .header__container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 192px;
+    padding-top: 32px;
+  }
+
+  .main__container {
+    align-items: flex-start;
+    background-image: url(../images/info-block-adaptive.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: right 70% bottom 90%;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .header__container .nav__button {
+    display: none;
+  }
+
+  .cards__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .main__title {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .main__button {
+    width: 345px;
+  }
+
+  .main__container .description {
+    display: none;
+  }
+
+  .token__container {
+    width: 343px;
+    gap: 20px;
+  }
+
+  .token__container .section__title {
+    font-size: 30px;
+  }
+
+  .token__container .description {
+    font-size: 16px;
+  }
+
+  .adaptive__img {
+    display: none;
+  }
+}

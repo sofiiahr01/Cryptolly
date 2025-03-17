@@ -1,9 +1,16 @@
+.navbar-toggler {
+  display: none;
+}
+
 .header__container {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: auto;
-  margin-bottom: auto;
   gap: 184px;
+}
+
+.logo__container {
+  width: 132px;
 }
 
 .nav__list {
