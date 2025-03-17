@@ -3,39 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
     <title>Cryptolly</title>
   </head>
   <body>
-    <header>
-      <div class="container header__container">
-        <div class="logo__conteiner">
-          <img src="./images/icons/logo.png" alt="logo" />
+    <header class="header__section">
+      <div class="container">
+        <div class="header__container">
+          <div class="logo__conteiner">
+            <img src="./images/icons/logo.png" alt="logo" />
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#about">About</a></li>
+              <li class="nav__item"><a href="#service">Service</a></li>
+              <li class="nav__item"><a href="#sale">Token Sale</a></li>
+              <li class="nav__item"><a href="#faq">FAQ’s</a></li>
+              <li class="nav__item"><a href="#team">Team</a></li>
+              <li class="nav__item"><a href="#blog">Blog</a></li>
+            </ul>
+          </nav>
+          <button class="nav__button">Get in Touch</button>
         </div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#about">About</a></li>
-            <li class="nav__item"><a href="#service">Service</a></li>
-            <li class="nav__item"><a href="#sale">Token Sale</a></li>
-            <li class="nav__item"><a href="#faq">FAQ’s</a></li>
-            <li class="nav__item"><a href="#team">Team</a></li>
-            <li class="nav__item"><a href="#blog">Blog</a></li>
-          </ul>
-        </nav>
-        <button class="nav__button">Get in Touch</button>
-      </div>
-      <div class="main__container">
-        <h1 class="main__title">Own Your Crypto<br />Adventure</h1>
-        <p class="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi
-        </p>
-        <button class="main__button">Get Started</button>
+        <div class="main__container">
+          <h1 class="main__title">Own Your Crypto<br />Adventure</h1>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          </p>
+          <button class="main__button">Get Started</button>
+        </div>
       </div>
     </header>
     <main>
-      <section class="about__section">
-        <div class="container">
+      <section class="token__section">
+        <div class="container token__container">
           <div class="title__container">
             <span class="pre__title">Our Token</span>
             <h2 class="section__title">Token seal</h2>
@@ -83,109 +89,107 @@
               </p>
             </article>
           </div>
-          <div class="container">
+          <div class="container token-cards__container">
             <div class="title__container">
               <h2 class="section__title">
                 Lörem ipsum häsat promotiv sedan depatologi tenes.
               </h2>
               <p class="description">Lörem ipsum sosm niliga syntris.</p>
             </div>
-            <div class="card">
-              Lörem ipsum dorade boktig till geosylig postmodern.
-            </div>
-            <div class="card">
-              Lörem ipsum dorade boktig till geosylig postmodern.
-            </div>
-            <div class="card">
-              Lörem ipsum dorade boktig till geosylig postmodern.
+            <div class="cards">
+              <div class="card">
+                <p class="description">
+                  Lörem ipsum dorade boktig till geosylig postmodern.
+                </p>
+              </div>
+              <div class="card">
+                <p class="description">
+                  Lörem ipsum dorade boktig till geosylig postmodern.
+                </p>
+              </div>
+              <div class="card">
+                <p class="description">
+                  Lörem ipsum dorade boktig till geosylig postmodern.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="service__section">
-        <div class="container">
-          <article class="services__card">
-            <span class="pre__title">Our Services</span>
+        <div class="container services__container">
+          <article class="token__article services__card">
+            <span class="pre__title">Our<br />Services</span>
             <h2 class="section__title">Our Services for You</h2>
             <p class="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore
             </p>
           </article>
-          <article class="services__card">
-            <article class="token__article">
-              <img
-                src="./images/icons/Group 1000003752.svg"
-                alt=""
-                class="card__img"
-              />
-              <h4 class="card__title">Bitcoin Escrow Service</h4>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                aliquam, purus sit amet luctus
-              </p>
-            </article>
+          <article class="token__article">
+            <img
+              src="./images/icons/Group 1000003752.svg"
+              alt=""
+              class="card__img"
+            />
+            <h4 class="card__title">Bitcoin Escrow Service</h4>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus
+            </p>
           </article>
-          <article class="services__card">
-            <article class="token__article">
-              <img
-                src="./images/icons/Group 1000003752.svg"
-                alt=""
-                class="card__img"
-              />
-              <h4 class="card__title">Safe And Secure</h4>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                aliquam, purus sit amet luctus
-              </p>
-            </article>
+          <article class="token__article">
+            <img
+              src="./images/icons/Group 1000003752.svg"
+              alt=""
+              class="card__img"
+            />
+            <h4 class="card__title">Safe And Secure</h4>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus
+            </p>
           </article>
-          <article class="services__card">
-            <article class="token__article">
-              <img
-                src="./images/icons/Group 1000003752.svg"
-                alt=""
-                class="card__img"
-              />
-              <h4 class="card__title">Integrated App</h4>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                aliquam, purus sit amet luctus
-              </p>
-            </article>
+          <article class="token__article">
+            <img
+              src="./images/icons/Group 1000003752.svg"
+              alt=""
+              class="card__img"
+            />
+            <h4 class="card__title">Integrated App</h4>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus
+            </p>
           </article>
-          <article class="services__card">
-            <article class="token__article">
-              <img
-                src="./images/icons/Group 1000003752.svg"
-                alt=""
-                class="card__img"
-              />
-              <h4 class="card__title">Safe And Secure</h4>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                aliquam, purus sit amet luctus
-              </p>
-            </article>
+          <article class="token__article">
+            <img
+              src="./images/icons/Group 1000003752.svg"
+              alt=""
+              class="card__img"
+            />
+            <h4 class="card__title">Safe And Secure</h4>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus
+            </p>
           </article>
-          <article class="services__card">
-            <article class="token__article">
-              <img
-                src="./images/icons/Group 1000003752.svg"
-                alt=""
-                class="card__img"
-              />
-              <h4 class="card__title">Safe And Secure</h4>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                aliquam, purus sit amet luctus
-              </p>
-            </article>
+          <article class="token__article">
+            <img
+              src="./images/icons/Group 1000003752.svg"
+              alt=""
+              class="card__img"
+            />
+            <h4 class="card__title">Safe And Secure</h4>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus
+            </p>
           </article>
         </div>
       </section>
       <section class="team__section">
-        <div class="container">
+        <div class="container team__wrap">
           <div class="team__container">
             <span class="pre__title">Team</span>
             <h2 class="section__title">Member of our expert team</h2>
@@ -208,7 +212,7 @@
         </div>
       </section>
       <section class="sale__section">
-        <div class="container">
+        <div class="container sale__container">
           <div class="title__container">
             <span class="pre__title">Lorem ipsum</span>
             <h2 class="section__title">Amet pretium</h2>
@@ -220,42 +224,63 @@
           </div>
           <div class="module__articles">
             <article class="module__card">
-              <h4 class="card__title">Module 1: The foundation</h4>
-              <p class="description">
-                Discover the most promising niche in cryptocurrencies where you
-                can make decent money on your own
-              </p>
-              <p class="post__description">What we will learn and do:</p>
-              <div class="learn__container">
-                <div class="learn__card">Apps Development</div>
-                <div class="learn__card">SEO Services</div>
-                <div class="learn__card">Data Analysis</div>
+              <div class="module__wrap">
+                <div class="module__text">
+                  <h4 class="card__title">Module 1: The foundation</h4>
+                  <p class="description">
+                    Discover the most promising niche in cryptocurrencies where
+                    you can make decent money on your own
+                  </p>
+                  <p class="post__description">What we will learn and do:</p>
+                  <div class="learn__container">
+                    <div class="learn__card">Apps Development</div>
+                    <div class="learn__card">SEO Services</div>
+                    <div class="learn__card">Data Analysis</div>
+                  </div>
+                </div>
+                <div class="module__img">
+                  <img src="./images/blue-safe.png" alt="blue-safe" />
+                </div>
               </div>
             </article>
             <article class="module__card">
-              <h4 class="card__title">Module 1: The foundation</h4>
-              <p class="description">
-                Discover the most promising niche in cryptocurrencies where you
-                can make decent money on your own
-              </p>
-              <p class="post__description">What we will learn and do:</p>
-              <div class="learn__container">
-                <div class="learn__card">Apps Development</div>
-                <div class="learn__card">SEO Services</div>
-                <div class="learn__card">Data Analysis</div>
+              <div class="module__wrap">
+                <div class="module__text">
+                  <h4 class="card__title">Module 2: The foundation</h4>
+                  <p class="description">
+                    Discover the most promising niche in cryptocurrencies where
+                    you can make decent money on your own
+                  </p>
+                  <p class="post__description">What we will learn and do:</p>
+                  <div class="learn__container">
+                    <div class="learn__card">Apps Development</div>
+                    <div class="learn__card">SEO Services</div>
+                    <div class="learn__card">Data Analysis</div>
+                  </div>
+                </div>
+                <div class="module__img">
+                  <img src="./images/safe.png" alt="safe" />
+                </div>
               </div>
             </article>
             <article class="module__card">
-              <h4 class="card__title">Module 1: The foundation</h4>
-              <p class="description">
-                Discover the most promising niche in cryptocurrencies where you
-                can make decent money on your own
-              </p>
-              <p class="post__description">What we will learn and do:</p>
-              <div class="learn__container">
-                <div class="learn__card">Apps Development</div>
-                <div class="learn__card">SEO Services</div>
-                <div class="learn__card">Data Analysis</div>
+              <div class="module__wrap">
+                <div class="module__text">
+                  <h4 class="card__title">Module 3: The foundation</h4>
+                  <p class="description">
+                    Discover the most promising niche in cryptocurrencies where
+                    you can make decent money on your own
+                  </p>
+                  <p class="post__description">What we will learn and do:</p>
+                  <div class="learn__container">
+                    <div class="learn__card">Apps Development</div>
+                    <div class="learn__card">SEO Services</div>
+                    <div class="learn__card">Data Analysis</div>
+                  </div>
+                </div>
+                <div class="module__img">
+                  <img src="./images/pink-safe.png" alt="pink-safe" />
+                </div>
               </div>
             </article>
           </div>
