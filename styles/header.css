@@ -7,6 +7,15 @@
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 184px;
+  padding-top: 26px;
+}
+
+.collapse:not(.show) {
+  display: flex;
+}
+
+.ms-auto {
+  margin: 0 !important;
 }
 
 .logo__container {
@@ -15,6 +24,7 @@
 
 .nav__list {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 39px;
@@ -75,8 +85,8 @@ input::placeholder {
 
 .arrow {
   position: absolute;
-  right: 50px;
-  top: 27%;
+  right: 100px;
+  top: 20%;
   font-size: 24px;
   color: #666;
   cursor: pointer;

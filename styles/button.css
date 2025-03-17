@@ -1,61 +1,47 @@
 .nav__button {
-  width: 162px;
   text-align: center;
+  white-space: nowrap;
   padding: 13px 32px;
   border-radius: 10px;
   border: none;
-  background: var(--gradient);
   font-family: var(--primery-font);
   font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
   text-align: center;
   color: var(--secondary-color);
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  background-image: linear-gradient(253deg, #18c8ff, #933ffe);
   cursor: pointer;
+  background-blend-mode: overlay;
 }
 
 .nav-button:active {
   box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.5);
-  border-style: solid;
-  border-width: 1px;
-  border-image-source: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.47),
-    rgba(255, 255, 255, 0.55) 33%,
-    rgba(255, 255, 255, 0.39) 67%
-  );
-  border-image-slice: 1;
-  background-image: linear-gradient(254deg, #18c8ff 92%, #933ffe 69%),
+  border: none;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  background-image: linear-gradient(254deg, #18c8ff, #933ffe),
     linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.47),
       rgba(255, 255, 255, 0.55) 33%,
       rgba(255, 255, 255, 0.39) 67%
     );
-  background-origin: border-box;
-  background-clip: content-box, border-box;
   transform: scale(0.95);
+  background-blend-mode: overlay;
 }
 
 .nav-button:focus {
-  border-style: solid;
-  border-width: 1px;
-  border-image-source: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.47),
-    rgba(255, 255, 255, 0.55) 33%,
-    rgba(255, 255, 255, 0.39) 67%
-  );
-  border-image-slice: 1;
-  background-image: linear-gradient(253deg, #18c8ff 82%, #933ffe 11%),
+  background-image: linear-gradient(253deg, #18c8ff, #933ffe),
     linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.47),
       rgba(255, 255, 255, 0.55) 33%,
       rgba(255, 255, 255, 0.39) 67%
     );
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+  background-blend-mode: overlay;
 }
 
 .main__button {
@@ -63,10 +49,8 @@
   text-align: center;
   padding: 20px 48px;
   border-radius: 10px;
-  border-style: solid;
-  border-width: 1px;
-  border-image-source: var(--border-gradient);
-  background-image: var(--gradient);
+  border: none;
+  background-image: linear-gradient(253deg, #18c8ff, #933ffe);
   font-family: var(--primery-font);
   font-size: 16px;
   font-weight: 600;
@@ -74,4 +58,5 @@
   text-align: center;
   color: var(--secondary-color);
   margin-top: 20px;
+  background-blend-mode: overlay;
 }
